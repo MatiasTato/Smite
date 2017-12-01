@@ -1,0 +1,62 @@
+#trabajoBusqueda{
+  width: 45%;
+  display: inline-block;
+}
+
+#trabajoBusquedaImg{
+  float: right;
+  display: inline-block;
+  width: 50%;
+}
+
+#trabajoBusquedaImg img{
+  width: 100%;
+}
+
+#trabajoCarta{
+  width: 50%;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+#trabajoCartaImg{
+  width: 45%;
+  display: inline-block;
+  float: left;
+}
+
+#trabajoCartaImg img{
+  width: 100%;
+  height: auto;
+}
+
+#Anuncios{
+  text-align: center;
+  opacity: 1;
+  width: 70%;
+  margin-left: 15%;
+}
+
+#Anuncios p{
+  text-align: center;
+}
+
+#Carta {
+  opacity: 1;
+  width: 70%;
+  margin-left: 15%;
+}
+
+#Cv{
+  opacity: 1;
+  width: 70%;
+  margin-left: 15%;
+}
+
+#curriculumImg {
+  width: 40%;
+}
+
+#curriculumImg img{
+  width: 100%;
+}

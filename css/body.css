@@ -1,70 +1,23 @@
-#body{
+.pestañas {
+  padding-top: 60px;
   width: 100%;
-}
-
-#body #jumbo{
-  height: 100vh;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-
-  background-image: url("../img/JumboImg.jpg");
-  background-size: cover;
+  height: 100%;
+  opacity: 0;
+  background-attachment: fixed;
+  background-image: url("../Img/Fondo.jpg");
   background-repeat: no-repeat;
-}
+  background-size: cover;
 
-#body #jumbo .transparencia{
-  height: 100vh;
-  width: 100%;
-  background: radial-gradient(gray, black);
-  opacity: 0.7;
-
-  position: absolute;
-}
-
-#body #jumbo .container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-#body #jumbo .text{
-  text-align: center;
-  color: black;
-}
-
-#body #jumbo h1{
-  font-size: 100px;
-}
-
-#body #jumbo .descripcion{
-  font-size: 30px;
-  font-family: serif;
-}
-
-#body .leerMas{
-  font-size: 18px;
-  height: 40px;
-  width: 250px;
-  border-radius: 10px;
-  border-color: lightgray;
-  background: radial-gradient(lightgrey, gray);
-  z-index: 1;
-  opacity: 0.7;
-
-  position: absolute;
-  left: 50%;
-  top: 80%;
-  transform: translate(-50%,0);
-}
-
-#body .leerMas:hover{
-  opacity: 1;
-}
-
-#body #menos {
   display: none;
+}
+
+.extra{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.extra:hover{
+  color: blue;
 }
 
 #body .fondo {
@@ -72,21 +25,24 @@
   margin-left: 2.5%;
 }
 
-#body .h1{
+.subP{
+  font-weight: bold;
+}
+
+.h1{
   font-size: 50px;
   font-family: serif;
   color: black;
   text-align: center;
 }
 
-#body .texto {
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 100px;
+.texto {
+  width: 90%;
+  margin-left: 5%;
   margin-bottom: 100px;
 }
 
-#body .texto .p{
+.texto .p{
   text-align: left;
   font-size: 19px;
 }
@@ -111,7 +67,7 @@
   width: 100%;
 }
 
-#body .texto .h4{
+.texto .h4{
   font-family: serif;
   text-decoration: underline;
 }
@@ -126,13 +82,4 @@
 
 .izquierda{
   text-align: left;
-}
-
-.derecha{
-  text-align: left;
-}
-
-.parallax-window{
-  height: 400px;
-  background: transparent;
 }

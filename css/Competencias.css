@@ -1,0 +1,51 @@
+#miVocacion{
+  display: inline-block;
+  width: 60%;
+}
+
+#vocacionImg {
+  float: right;
+  display: inline-block;
+  height: 300px;
+  padding-top: 10px;
+}
+
+#vocacionImg img{
+  height: 100%;
+  width: auto;
+  margin-right: 50px;
+  opacity: 1;
+}
+
+#competenciasIntro{
+  float: right;
+  width: 60%;
+  display: inline-block;
+}
+
+#competenciasImg{
+  float: left;
+  display: inline-block;
+  width: 40%;
+  margin-top: 35px;
+}
+
+#competenciasImg img{
+  height: auto;
+}
+
+#competenciasTrabajo{
+  float: left;
+  width: 50%;
+  display: inline-block;
+}
+
+#competenciasTrabajoImg{
+  display: inline-block;
+  width: 40%;
+  margin-left: 40px;
+}
+
+#competenciasTrabajoImg img{
+  width: 100%;
+}

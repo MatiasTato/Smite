@@ -6,200 +6,907 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Head.css">
     <link rel="stylesheet" href="css/Foot.css">
+    <link rel="stylesheet" href="css/body_inicio.css">
+    <link rel="stylesheet" href="css/Competencias.css">
+    <link rel="stylesheet" href="css/Desarrollo.css">
+    <link rel="stylesheet" href="css/Trabajo.css">
+    <link rel="stylesheet" href="css/Entrevistas.css">
     <link rel="stylesheet" href="css/body.css">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400i" rel="stylesheet">
   </head>
   <body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
     <header id="head">
-      <nav id="navbar-example2" class="navbar navbar-light">
-        <a class="navbar-brand" href="#">Matías Tato</a>
+      <nav id="navbar-example2" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" id="mostrarInicio" href="#body">Matías Tato</a>
         <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#jumbo">Inicio</a>
+          <li class="nav-item" id="mostrarCompetencias">
+            <a class="nav-link" data-toggle="collapse" href="#competencias" aria-expanded="false" aria-controls="competencias">Competencias</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#vocacion">Vocacion</a>
+          <li class="nav-item" id="mostrarDesarrollo">
+            <a class="nav-link" href="#Desarrollo">Desarrollo web</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#competencias">Competencias</a>
+          <li class="nav-item" id="mostrarEntrevistas">
+            <a class="nav-link" href="#Entrevistas">Entrevistas</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#entrevistas">Entrevistas</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#conceptos">Conceptos</a>
+          <li class="nav-item" id="mostrarTrabajo">
+            <a class="nav-link" href="#Trabajo">Trabajo</a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <!-- Precentación de mi persona -->
+
     <div id="body">
-      <button type="button" name="button" class="leerMas" id="menos">Conóceme un poco menos...</button>
-      <button type="button" name="button" class="leerMas" id="mas">Conóceme un poco más...</button>
-      <div class="fondo">
-        <div class="jumbotron jumbotron-fluid" id="jumbo">
-          <div class="transparencia">
-          </div>
-          <div class="container">
-            <h1 class="text display-3">¡Hola! Soy Matías</h1>
-            <p class="descripcion text lead">Esta página te va a contar un poco sobre la vida y la forma de pensar de
-              Matías Andres Tato González - sí, estas en lo correcto, esa persona soy yo -. 
-            </p>
-          </div>
+      <div class="leerMas" id="menos">
+        <button type="button" name="button" id="verCv" class="leerAlgo" data-toggle="modal" data-target="#cvModal">C.V</button>
+        <button type="button" name="button" class="leerAlgo" id="leerMenos">Leer menos...</button>
+      </div>
+      <button type="button" name="button" class="leerMas leerAlgo" id="mas">Conóceme un poco más...</button>
+      <div class="jumbotron jumbotron-fluid" id="jumbo">
+        <div class="transparencia">
         </div>
-          <div class="texto">
-            <h1 class="h1" id="vocacion">Mi vocación</h1><br>
-            <p class="p">
-              La vocación, en mi opinión, es la inclinación o preferencia hacia una carrera o profesión.
-              Esta está íntimamente relacionada con los gustos, capacidades, habilidades y competencias de uno mismo.
-              <br>
-              En mi caso, a causa de mi temprana edad, no tengo mucha idea de cual es mi vocación,
-              lo único que se es que se va a inclinar por el lado Físico-Matemático.
-            </p>
-          </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="imgCarousel d-block w-100" src="img/yo.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="imgCarousel d-block w-100" src="img/NubeDePalabras.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="imgCarousel d-block w-100" src="img/Laberinto.jpg" alt="Third slide">
-            </div>
-          </div>
-          <a class="flechas carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="flechas carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div>
-          <div class="texto">
-            <h1 class="h1" id="competencias">Competencias y  habilidades</h1>
-            <p class="p">
-              Como dije antes, la vocación depende mucho de las habilidades y competencias, entonces
-              para que todo quede claro voy a definir lo que estas son para mi.
-              <br>
-              Por un lado podemos definir las habilidades como el conocimiento o el saber hacer algo, mientras
-              que la competencia es saber cómo y en qué momento aplicar esos conocimientos o habilidades para
-              cada situación.
-            </p>
-              <br><br>
-            <p class="p">
-              Dentro de las competencias existen varios tipos, uno de ellos son las competencias transversales.
-              Estas competencias son comunes a todas las profesiones, eso quiere decir que son las competencias
-              necesarias para trabajar.
-              Dentro de estas competencias existen 4 grupos, las competencias personales, metodológicas, técnicas y
-              participativas.
-              <br>
-              Las personales son aquellas que nos preparan para desenvolvernos y relacionarnos de manera correcta
-              dentro del puesto o empresa que estemos.
-              <br>
-              Las técnicas son las competencias que dearrollamos o aprendemos para aplicar en el mundo laboral.
-              <br>
-              Las competencias participativas son las que demuestran conocimiento sobre el trabajo en equipo
-               y lo que este conlleva.
-              <br>
-              La competencia metodológica es aquella en la que se demuestra el saber reaccionar ante un problema o imprevisto
-              buscando una solución eficaz y por distintos caminos evalundo todas las posibilidades.
-            </p>
-              <br><br>
-            <p class="p">
-              Las competencias son muy inportantes no solo en el trabajo sino que también en la vida, en mi opinión
-              las mas importantes en el ámbito laboral son, en primer lugar, la perseverancia y en segundo lugar, la actitud.
-              Concidero que la perseverancia es clave a la hora de buscar empleo o realizar una tarea compleja para poder
-              continuar avanzando, no estancarnos y abandonar las metas que uno se propone. Por otra parte pienso que la actitud
-              de una persona frente a los problemas es lo que va a determinar una gran parte de su desempeño laboral debido a que no
-              es lo mismo una actitud positiva frente a una dificultad que una actitud negativa que no solo va a perjudicar a la
-              persona sino que a todo el ambiente lboral.
-            </p>
-          </div>
+        <div class="container">
+          <h1 class="text display-3">¡Hola! Soy Matías</h1>
+          <p class="descripcion text lead">Esta página te va a contar un poco sobre la vida y la forma de pensar de
+            Matías Andres Tato González - sí, estas en lo correcto, esa persona soy yo -.
+          </p>
         </div>
       </div>
-      <div class="parallax-window parallax2" data-parallax="scroll" data-image-src="../Smite/Img/Matematica2.jpg"></div>
+    </div>
+
+    <!-- Final de la precentación -->
+
+
+    <!-- Sección de Competencias -->
+
+    <div class = "pestañas collapse" id="competencias">
       <div class="texto">
-        <h1 class="h1" id="entrevistas">Entrevistas</h1>
-        <i class="i izquierda">"Uno de alguna manera se está vendiendo"</i>
-        <p class="pi izquierda">-Rita</p>
-        <br><br>
-        <i class="i derecha">"Nunca vendan algo que ustedes no son"</i>
-        <p class="pi derecha">-Rita</p>
+        <div id="miVocacion">
+          <h1 class="h1" id="vocacion">Mi vocación</h1><br>
+          <p class="p">
+            La vocación, en mi opinión, es la inclinación o preferencia hacia una carrera o profesión.
+            Esta está íntimamente relacionada con los gustos, capacidades, habilidades y competencias de uno mismo.
+            <br>
+            En mi caso, a causa de mi temprana edad, no tengo mucha idea de cual es mi vocación,
+            lo único que se es que se va a inclinar por el lado Físico-Matemático.
+          </p>
+        </div>
+        <figure id="vocacionImg">
+          <img src="img/vocacion.png" alt="Vocación">
+        </figure>
       </div>
-      <div class="parallax-window parallax1" data-parallax="scroll" data-image-src="../Smite/Img/Matematica.jpg"></div>
+      <div class="texto">
+        <div id="competenciasIntro">
+          <h1 class="h1">Competencias y  habilidades</h1>
+          <p class="p">
+            Como dije antes, la vocación depende mucho de las habilidades y competencias, entonces
+            para que todo quede claro voy a definir lo que estas son para mi.
+            <br>
+            Por un lado podemos definir las habilidades como el conocimiento o el saber hacer algo, mientras
+            que la competencia es saber cómo y en qué momento aplicar esos conocimientos o habilidades para
+            cada situación.
+          </p>
+          <br>
+          <p class="p">
+            Dentro de las competencias existen varios tipos, uno de ellos son las competencias transversales.
+            Estas competencias son comunes a todas las profesiones, eso quiere decir que son las competencias
+            necesarias para trabajar.
+            Dentro de estas competencias existen 4 grupos, las competencias personales, metodológicas, técnicas y
+            participativas.
+          </p>
+        </div>
+        <figure id="competenciasImg">
+          <img src="img/Competencias.png" alt="Competencias">
+        </figure>
+        <p class="p">
+          <br>
+          Las personales son aquellas que nos preparan para desenvolvernos y relacionarnos de manera correcta
+          dentro del puesto o empresa que estemos.
+
+          Las técnicas son las competencias que dearrollamos o aprendemos para aplicar en el mundo laboral.
+
+          Las competencias participativas son las que demuestran conocimiento sobre el trabajo en equipo
+           y lo que este conlleva.
+
+          La competencia metodológica es aquella en la que se demuestra el saber reaccionar ante un problema o imprevisto
+          buscando una solución eficaz y por distintos caminos evalundo todas las posibilidades.
+        </p>
+      </div>
+      <div class="texto">
+        <div id="competenciasTrabajo">
+          <p class="p">
+            Las competencias son muy importantes no solo en el trabajo sino que también en la vida, en mi opinión
+            las mas importantes en el ámbito laboral son, en primer lugar, la perseverancia y en segundo lugar, la actitud.
+            Concidero que la perseverancia es clave a la hora de buscar empleo o realizar una tarea compleja para poder
+            continuar avanzando, no estancarnos y abandonar las metas que uno se propone. Por otra parte pienso que la actitud
+            de una persona frente a los problemas es lo que va a determinar una gran parte de su desempeño laboral debido a que no
+            es lo mismo una actitud positiva frente a una dificultad que una actitud negativa que no solo va a perjudicar a la
+            persona sino que a todo el ambiente lboral.
+          </p>
+        </div>
+        <figure id="competenciasTrabajoImg">
+          <img src="img/Trabajo.png" alt="Trabajo">
+        </figure>
+      </div>
+    </div>
+
+    <!-- Final de la sección de Competencias -->
+
+
+    <!-- Sección de Desarrollo web -->
+
+    <div class="pestañas" id="Desarrollo">
       <div class="texto">
         <h1 class="h1" id="conceptos">Conceptos básicos</h1>
-        <h4 class="h4">
-          Desarrollador Web:
-        </h4>
+        <div id="accordion" role="tablist">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Desarrollador Web
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Programador especializado en el desarrollo de aplicaciones
+                en red que se ejecutan mediante http.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwo">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  HyperText Transfer Protocol
+                </a>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                HTTP. Es el protocolo que permite la transferencia de información en la
+                World Wide Web.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingThree">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  World Wide Web
+                </a>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Es un sistema de distribución de documentos de hipertexto interconectados y
+                accesibles vía internet.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingFour">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  HyperText Markup Language
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                HTML. Es un lenguaje de etiquetas que sirve para crear y reprecentar visualmente
+                una página web.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingFive">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Cascading Style Sheets
+                </a>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                CSS. Es un lenguaje utilizado para darle estilo al documento HTML.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingSix">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Java Script
+                </a>
+              </h5>
+            </div>
+            <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+              <div class="card-body">
+                Es un lenguaje de programación que en el desarrollo de una pagina web le da inteligencia, funcionalidad
+                y lógica a la página.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingSeven">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  JQuery
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
+              <div class="card-body">
+                Otra forma de escribir JS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingEight">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  Collapsible Group Item #8
+                </a>
+              </h5>
+            </div>
+            <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion">
+              <div class="card-body">
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingNine">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                  Collapsible Group Item #9
+                </a>
+              </h5>
+            </div>
+            <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine" data-parent="#accordion">
+              <div class="card-body">
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTen">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                  Collapsible Group Item #10
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapseTen" class="collapse" role="tabpanel" aria-labelledby="headingTen" data-parent="#accordion">
+              <div class="card-body">
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingEleven">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                  Collapsible Group Item #11
+                </a>
+              </h5>
+            </div>
+            <div id="collapseEleven" class="collapse" role="tabpanel" aria-labelledby="headingEleven" data-parent="#accordion">
+              <div class="card-body">
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwelve">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                  Collapsible Group Item #12
+                </a>
+              </h5>
+            </div>
+            <div id="collapseTwelve" class="collapse" role="tabpanel" aria-labelledby="headingTwelve" data-parent="#accordion">
+              <div class="card-body">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final de la sección de Desarrollo web -->
+
+
+    <!-- Sección de Entrevistas -->
+
+    <div class="pestañas" id="Entrevistas">
+      <div class="texto">
+        <div class="entrevistas">
+          <div class="card" style="width: 23rem;">
+            <img class="card-img-top" src="Img/entrevistaRita.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Rita Marquisio</h4>
+              <p class="card-text cita">"Nunca vendan algo que ustedes no son"</p>
+              <a href="#" class="btn btn-secondary">Entrevista</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="entrevistas">
+          <div class="card" style="width: 23rem;">
+            <img class="card-img-top" src="Img/entrevistaSebastian.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Sebastián Caggiano</h4>
+              <p class="card-text cita">"No vean el trabajo como un trabajo, vean el trabajo como parte de si mismos"</p>
+              <a href="#sebastianCaggiano" data-toggle="modal" class="btn btn-secondary">Entrevista</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="entrevistas">
+          <div class="card" style="width: 23rem;">
+            <img class="card-img-top" src="Img/entrevistaSantiago.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Santiago Fernández</h4>
+              <p class="card-text cita">"Algo que dijo"</p>
+              <a data-toggle="modal" href="#santiagoFernandez" class="btn btn-secondary">Entrevista</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="entrevistas">
+          <div class="card" style="width: 23rem;">
+            <img class="card-img-top" src="Img/entrevistaFabian.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Fabián Coito</h4>
+              <p class="card-text cita">"La semilla del fracaso germina en pleno éxito"</p>
+              <a href="#fabianCoito" data-toggle="modal" class="btn btn-secondary">Entrevista</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final de la seccion de Entrevistas -->
+
+
+    <!-- Sebastian Caggiano -->
+
+    <div class="modal fade bd-example-modal-lg" id="sebastianCaggiano" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Entrevista a Sebastián Caggiano</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            1. "¿Qué estudios has cursado?"<br>
+            Desde pequeño cursó inglés de la alianza. Cursó una maestría en matemáticas por un
+            año. Luego cursó ingeniería en computación y culminó su carrera en 8 años.
+            <br><br>
+            2. "¿Qué nivel de estudios tenías cuando comenzaste a trabajar?"<br>
+            Comenzó a trabajar mientras cursaba tercer año en estudios terciarios.
+            <br><br>
+            3. "De los conocimientos adquiridos anteriormente ¿Cuáles fueron los
+            más significativos para tu trabajo?"<br>
+            En tanto a lo no técnico lo más significativo aprendido fue a mantener la persistencia
+            antes los problemas presentados. En cuanto a lo técnico su aprendizaje más significativo
+            fue el funcionamiento de lo relacionado a su carrera.
+            <br><br>
+            4. "¿Cuál ha sido tu mejor experiencia laboral hasta el momento?
+            ¿Cuáles han sido tus mejores y peores experiencias?"<br>
+            Trabaja en la misma empresa desde que comenzó su experiencia laboral y actualmente a
+            parte del trabajo en la empresa también desarrolla su propio proyecto. Una de las
+            razones por las que continúa en la misma empresa es porque trabaja con amigos; esto
+            forma parte de una de sus mejores experiencias laborales ya que dice que el trabajo en
+            equipo es muy importante en su vida. Por otra parte Sebastián considera una de las
+            peores experiencias laborales el trato con el cliente ya que a veces este puede resultar
+            confuso o ambiguo en sus pedidos generando mal entendidos.
+            <br><br>
+            5. "¿Es excluyente una buena base de inglés?"<br>
+            No es excluyente hablar inglés pero es muy importante ya que abre muchas puertas a
+            mercados internacionales.
+            <br><br>
+            6. "¿Es un trabajo repetitivo o cambia según el cliente? Si cambia: ¿Qué
+            es lo que se mantiene y que no?"<br>
+            El trabajo es variable o no dependiendo del entorno de trabajo y de la persona. En un
+            entorno no favorecedor o si la persona no presenta una actitud de interés frente a la tarea
+            a cumplir, el trabajo sería repetitivo. Por otro lado en un ambiente que promueve el
+            desarrollo del trabajador o donde la persona demuestra interés en su tarea no solo el
+            trabajo cambia sino que también se abren caminos hacia distintos trabajos.
+            <br><br>
+            7. "¿Cuál es la diferencia entre desarrollador web y diseñador web?"<br>
+            El diseñador web no necesita ningún conocimiento en programación ya que solo se
+            encarga de bosquejar el diseño gráfico de una página web. El desarrollador web es
+            quien se encarga de convertir ese boceto en una página web.
+            El desarrollador web es un programador con conocimientos de lenguajes específicos
+            utilizados en las páginas web. Por otra parte el diseñador web es quien se encarga de
+            planificar y diseñar el aspecto de la página web.
+            <br><br>
+            8. "¿Qué lenguajes has estudiado y cuáles te resultaron más difíciles?"<br>
+            Los lenguajes que ha estudiado son C#, JavaScript, Visual Basic y Java siendo este
+            último el más difícil de aprender porque no era de su gusto.
+            <br><br>
+            9. "¿Cuáles son los lenguajes más demandados en el mercado actual?"<br>
+            En el mercado los lenguajes más demandados son: JavaScript, PhP y .net en ese orden.
+            También hay otros lenguajes que han adquirido popularidad como: Python, SQL, Swift,
+            entre otros.
+            <br><br>
+            10. "¿Qué competencias técnicas y metodológicas tienen en cuenta las
+            empresas a la hora de contratarte? ¿Cuáles son los conocimientos
+            mínimos con los cuales nos podríamos presentar en una entrevista de
+            trabajo?"<br>
+            Antes las metodologías eran muy burocráticas y no favorecían a la demanda del
+            mercado. Actualmente se utilizan metodologías ágiles para satisfacer la demande de
+            rapidez de los clientes. La más conocida es Scrum, se caracteriza por definir ciertas
+            reglas durante el proceso de desarrollo, como por ejemplo que el equipo de desarrollo se
+            junte una vez a la semana, juntarse una de cada dos semanas con el cliente, etc.
+            Para presentarte en una entrevista como programador junior es necesario tener una base
+            de: html, CSS, JavaScript, algo de algoritmia y de lenguaje de servidor.
+            En la entrevista misma te pueden evaluar poniendo algún ejercicio de algoritmia para
+            resolver y demostrar tus capacidades.
+            <br><br>
+            11."¿Cuáles son las tareas de un desarrollador jr en su primera
+            experiencia laboral?"<br>
+            Un desarrollador jr comienza con tares de estudio relacionadas con la modalidad de
+            trabajo de la empresa y poco a poco se le van otorgando tareas más difíciles. Ahí es
+            donde el desarrollador debe lucir y pulir sus capacidades en orden de progresar como
+            programador.
+            <br><br>
+            12."Considerando las distintas formas de trabajo: Freelance, part time,
+            full time ¿Cuál crees que es la escala de demanda?"<br>
+            Freelance es el más demandado por una cuestión horaria y porque sos tu propio jefe, lo
+            más difícil de ser un freelancer es autodisciplinarse y cumplir con la rutina de trabajo
+            diario. Entre full time y part time no hay mucha diferencia en la escala de demanda.
+            Un freelancer es una persona que trabaja por sí mismo en su profesión u oficio.
+            <br><br>
+            13."¿Cuáles son las empresas más reconocidas en el medio local?"<br>
+            Las empresas más reconocidas son: Arcano, Global, Mercado Libre, Infocorp,
+            GeneXus.
+            <br><br>
+            14."¿Cómo se calcula el sueldo del programador? Ej.: horas, dificultad,
+            mantenimiento, etc. ¿Cuál es el sueldo promedio del desarrollador jr?"<br>
+            Como freelancer el sueldo es calculado por horas de trabajo estimadas mientras que
+            como empleado el sueldo es mensual dependiendo de la empresa. El sueldo líquido
+            promedio de un desarrollador jr que trabaja 8 horas está entre 25 y 30 mil pesos
+            uruguayos. El sueldo promedio de un desarrollador web varía en cada país.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Sebastian Caggiano -->
+
+
+    <!-- Santiago Fernandez -->
+
+    <div class="modal fade bd-example-modal-lg" id="santiagoFernandez" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Entrevista a Santiago Fernández</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            En mi opinión, los tips más importantes que menciona Santiago son, en primer lugar, la perseverancia y en segundo lugar, la actitud.
+            Concidero que la perseverancia es clave a la hora de buscar empleo o realizar una tarea compleja para poder continuar avanzando y no
+            estancarnos y abandonar las metas que uno se propone. Por otra parte pienso que la actitud de una persona frente a los problemas es
+            lo que va a determinar una gran parte de su desempeño laboral debido a que no es lo mismo una actitud positiva frente a una dificultad
+            que una actitud negativa, no solo va a perjudicar a la persona sino que a todo el ambiente en el que trabaja.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final de Santiago Fernandez -->
+
+
+    <!-- Fabian Coito -->
+
+    <div class="modal fade bd-example-modal-lg" id="fabianCoito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Entrevistas a Fabián Coito</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="p">
+              "[...] Un día comence a entrenar y lo hice seguramente comparado a lo que hago hoy como entrenador bastante mal, en
+              cuanto a las estrategias, el estilo, fui aprendiendo porque quizá una de las claves, de las cosas más importantes
+              fue estar observando y aprendiendo de cada compañero que tuve [...]"
+              <br><br>
+              Esta frase me llamó la atención porque en ella Fabián explica el pregreso durante la experiencia laboral,
+              como nos desarrolamos o adquirimos experiencia desde un comienzo no perfecto a un futuro más perfeccionado,
+              donde ya podemos ser más eficientes porque tenemos más conocimientos y más practicidad en nuestra tarea.
+              Personalmente me interesó porque aún no tengo alguna experiencia laborar, supongo que al comenzar a trabajar
+              me desempeñaré de una manera parecida a la que describe Coito.
+              Por otra parte en la frase se hace referencia al aprendizaje a partir de la observación del los compañeros,
+              a la interracción con ellos donde se da un importante enriquecimiento tanto a nivel laboral como intelectual,
+              algo que considero muy importante debido a que refleja el ambiente laboral en el que uno se encuentra.
+              <br><br>
+              "[...] cada uno debe armar su proyecto personal, lo cual para mi gusto se construye sobre dos pilares fundamentales
+              que es la motivación y el esfuerzo [...]. La motivación está relacionada a la necesidad de lograr cosas importanes,
+              de plantearnos objetivos o proyectos; y el esfuerzo es lo que nos permite ir venciendo pequeñas batallas
+              que se nos aparecen día a día, ciertas dificultades que todos los días nos van apareciendo, eso es clave [...]".
+              <br><br>
+              Concuerdo con Fabián en esta frase por que pienso que para lograr alguna meta es neceario en primer lugar estar
+              motivado, de lo contrario la meta es inútil y se vuelvue inalcanzable. En segundo lugar creo que el esfuerzo y
+              empeño que uno pone en lograr esa meta es lo que hace que todo valga la pena una vez logrado el desafío.
+              <br><br>
+              "[...] La semilla del fracaso germina en pleno éxito [..]"
+              <br><br>
+              Muchas veces el fracaso aparece luego de estancarnos al ver el éxito de lograr pequeñas o grandes metas.
+              Esto nos separa de nuestra meta o cometido final por eso no nos debemos quedar con esas metas de medio camino,
+              siempre debemos aspirar a superarnos y a no quedarnos en nuestra zona de confort.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final de Fabian Coito -->
+
+
+    <!-- Sección de Trabajo -->
+
+    <div class="pestañas" id="Trabajo">
+      <div class="texto">
+        <div id="trabajoBusqueda">
+          <h1 class="h1">Busqueda laboral</h1>
+          <p class="p">
+            Hoy en dia es muy comun buscar trabajo en internet, pero no cualquier lugar sirve para conceguir empleo, algunas de las
+            paginas mas recomendables para buscar empleo son: UruguayConcursa, Buscojobs, Manpower, Gallito y CompuTrabajo entre otros.
+          </p>
+          <p class="p">
+            Lo mas importante a la hora de conseguir trabajo no es saber en donde buscar sino que saber como analizar detalladamente
+            el empleo postulado. Para analizar un anuncio de trabajo se debe hacer 2 analisis distintos, el primero se basa en
+            analizar el perfil del cargo, lo que tengo que hacer, cuanto voy a ganar, etc. En el segundo se debe analizar la empresa
+            que te va a contratar, el rubro, mision, vision, los datos de ubicación, etc.
+          </p>
+          <p class="extra" id="Analisis" data-toggle="modal" data-target="#myModal">
+            Ver analisis >>>
+          </p>
+        </div>
+        <figure id="trabajoBusquedaImg">
+          <img src="img/trabajoOferta.png" alt="Oferta de trabajo">
+        </figure>
+      </div>
+      <div class="texto">
+        <div id="trabajoCarta">
+          <h1 class="h1">Carta de presentación</h1>
+          <p class="p">
+            Una carta de presentación es la justificación del por que te postulas para ese empleo y por que crees que serias
+            un buen candidato. En ocaciones la carta de presentación es un elemento muy importante, como por ejemplo, cuando una empresa
+            grande publica una oferta de trabajo, llegan muchos C.V y ahí es donde entra la importancia de la carta, ya que una buena carta
+            de presentació va a motivar al lector a leer el C.V con mayor interes, tambien sirven para presentarte de una forma resumida lo
+            cual es muy ulti cuando la empresa tiene tantos C.V y no mucho tiempo.
+          </p>
+          <br>
+          <p class="p">
+            Los objetivos de esta carta son, dentro de los mas importantes, motivar al lector a seguir leyendo sobre vos en el C.V, llamar
+            la atención sobre tu interes por el trabajo y las razones por las que eres un buen candidato, explicar por que te postulas
+            para ese trabajo y como te enteraste de la oferta laboral, reflejar tu personalidad, motivación y actitud frente al cargo,
+            resaltar algunas competencias o habilidades utiles para el cargo que no esten en el C.V, y lo mas importante de todo, busca
+            complementar al Curriculum Vitae y no repetir lo que este dice.
+          </p>
+        </div>
+        <figure id="trabajoCartaImg">
+          <img src="img/Carta.png" alt="Carta">
+        </figure>
         <p class="p">
-          Programador especializado en el desarrollo de aplicaciones
-          en red que se ejecutan mediante http.
+          La carta de presentación se escribe en parrafos y cada uno de estos tienen un proposito en la carta. El primer parrafo es el mas
+          importante ya que se va a encargar de cautivar al lector, el objetivo de este parrafo es ofrecer la información basica y explicar el
+          por que escribes la carta. En el segundo parrafo se debe explicar por que quieres trabajar para esa compania y por que piensas que
+          eres apto par el empleo, aqui es donde pondremos nuestras competencias o habilidades utiles para el empleo al que nos postulamos.
+          En el tercer y ultimo parrafo vamos a colocar nuestras aspiraciones salariales y disponibilidad horaria en caso de que la empresa
+          lo solicite, tambien tendremos que mostrar interes en conctretar una entrevista laboral y como ultimo una desedida formal.
         </p>
-        <br>
-        <h4 class="h4">
-          HTTP:
-        </h4>
         <p class="p">
-          HyperText Transfer Protocol. Es el protocolo que permite la transferencia de información en la
-          World Wide Web.
+          Hay que recordar siempre leerlo mas de una vez para repasar las faltas ortograficas, tambien podemos mostrarsela a alguien para
+          que la lea y nos de su opinion, revisar que el nombre de la empresa, la fecha y la dirección concuerden con la oferta laboral
+          postulada y que la fecha de entrega sea correspodiente con el dia enviado.
         </p>
-        <br>
-        <h4 class="h4">
-          World Wide Web:
-        </h4>
-        <p class="p">
-          Es un sistema de distribución de documentos de hipertexto interconectados y
-          accesibles vía internet.
-        </p>
-        <br>
-        <h4 class="h4">
-          HTML:
-        </h4>
-        <p class="p">
-          HyperText Markup Language. Es un lenguaje de etiquetas que sirve para crear y reprecentar visualmente
-          una página web.
-        </p>
-        <br>
-        <h4 class="h4">
-          CSS:
-        </h4>
-        <p>
-          Cascading Style Sheets. Es un lenguaje utilizado para darle estilo al documento HTML.
-        </p>
-        <br>
-        <h4 class="h4">
-          Java Script:
-        </h4>
-        <p class="p">
-          Es un lenguaje de programación que en el desarrollo de una pagina web le da inteligencia, funcionalidad
-          y lógica a la página.
-        </p>
-        <br>
-        <h4 class="h4">
-          JQuery:
-        </h4>
-        <p class="p">
-          Otra forma de escribir JS.
+        <p class="extra" id="miCarta" data-toggle="modal" data-target="#cartaModal">
+          Ver carta >>>
         </p>
       </div>
     </div>
-    <div id="foot">
 
+    <!-- Final de la sección de Trabajo -->
+
+
+    <!-- Anuncios -->
+
+    <div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Pasante Ingeniero Civil</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="Anuncios">
+              <div class="texto">
+                <h4 class="h4">Perfi del cargo</h4>
+                <p class="p subP">
+                  Conocimientos:
+                </p>
+                <p class="p">
+                  -Escolaridad
+                  <br>
+                  -Cursos en Seguridad Vial y Tránsito
+                </p>
+                <br><br>
+                <p class="p subP">
+                  Competencias/Habilidades:
+                </p>
+                <p class="p">
+                  -Trabajo en equipo.
+                  <br>
+                  -Compromiso.
+                  <br>
+                  -Adaptabilidad y flexibilidad.
+                  <br>
+                  -Organización y Planificación.
+                  <br>
+                  -Buen relacionamiento interpersonal.
+                  <br>
+                  -Proactividad.
+                  <br>
+                  -Capacidad para aprender.
+                  <br>
+                  -Creatividad.
+                  <br>
+                  -Dinamismo.
+                </p>
+                <br><br>
+                <p class="p subP">
+                  Experiencia requerida:
+                </p>
+                <p class="p">
+                  -No requiere experiencia previa
+                </p>
+                <br><br>
+                <p class="p subP">
+                  Edad/Sexo:
+                </p>
+                <p class="p">
+                  -No influye
+                </p>
+                <br><br>
+                <p class="p subP">
+                  Requisitos excluyentes:
+                </p>
+                <p class="p">
+                  -Título de Ingeniero/a Civil, expedido por la Universidad de la
+                  República o su equivalente otorgado por instituciones reconocidas
+                  por autoridad competente.
+                </p>
+                <br><br>
+                <p class="p subP">
+                  Condiciones de trabajo:
+                </p>
+                <p class="p">
+                  -Carga Horaria: 40 horas semanales.
+                  <br>
+                  -Remuneración propuesta: 7 BPC. (Base de Prestaciones y
+                  Contribuciones).
+                  <br>
+                  -Lugar habitual de desempeño: Montevideo. Torre Ejecutiva.
+                  <br>
+                  -Plazo de contratación: 18 meses, incluida la licencia anual.
+                </p>
+                <br><br>
+                <h4 class="h4">Datos de la empresa: República del Uruguay</h4>
+                <p class="p subP">
+                  Rubro/Misión/Visión:
+                </p>
+                <p class="p">
+                  -Rubro: Construcción.
+                  <br>
+                  -Misión: Análisis de proyectos viales focalizando aspectos referentes
+                  a la seguridad vial de los mismos y promoción del enfoque integral
+                  relativo a un sistema de tránsito seguro.
+                  <br>
+                  -Visión: Seguridad vial.
+                </p>
+                <br><br>
+                <p class="p subP">
+                  Dirección/Zona:
+                </p>
+                <p class="p">
+                  -Dirección: Plaza Independencia esq. Ciudadela.
+                  <br>
+                  -Zona: Montevideo.
+                </p>
+                <br><br>
+                <p class="p subP">
+                  Datos de Ubicación:
+                </p>
+                <p class="p">
+                  -Entre las calles Ciudadela y Liniers.
+                  <br>
+                  -Frente a la Plaza Independencia
+                </p>
+                <br><br>
+                <a href="https://www.uruguayconcursa.gub.uy/Portal/servlet/com.si.recsel.verllamado?10804">Pasante Ingeniero Civil</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="../Smite/js/jquery-3.2.1.min.js"></script>
-    <script src="../Smite/js/popper.min.js"></script>
-    <script src="../Smite/js/bootstrap.min.js"></script>
-    <script src="../Smite/js/parallax.min.js"></script>
-    <script src="../Smite/js/body.js"></script>
-    <script src="../Smite/js/Head.js"></script>
-    <script src="../Smite/js/Foot.js"></script>
+
+    <!-- Final anuncios -->
+
+
+    <!-- Carta de presentación -->
+
+    <div class="modal fade bd-example-modal-lg" id="cartaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="Carta">
+              <div class="textos">
+                <p class="p" style="text-align : right">
+                  Matías Tato
+                </p>
+                <p class="p">
+                  Republica del Uruguay
+                  <br><br>
+                  15/10/2017
+                  <br><br>
+                  A quien corresponda, mi nombre es Matías Andrés Tato González y soy Ingeniero Civil recién recivido de la facultad de Ingeniería de la Universidad
+                  de la República, me pongo en contacto con usted por el anuncio publicado en Uruguay concursa que habilita las postulaciones desde el día 16/10/2017
+                  hasta el 15/11/2017 en el que su empresa requiere un Pasante ingeniero civil.
+                </p>
+                <br>
+                <p class="p">
+                  Estoy muy interesado en el puesto y más que nada en el perfil que tiene el cargo. Considero que estoy capacitado para el cargo porque soy
+                  una persona muy dinámica, proactiva y siempre estoy dispuesto a aprender cosas nuevas.
+                </p>
+                <br>
+                <p class="p">
+                  Tengo disponibilidad horaria necesaria para el cargo y estoy de acuerdo con el salario acordade en el anuncio.
+                  Agradecería mucho tener una entrevista por parte de ustedes.
+                  <br><br>
+                  Gracias por su tiempo,
+                  <br><br>
+                  Atentamente
+                  <br><br>
+                  Matías Tato.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final de la carta de presentación -->
+
+
+    <!-- Curriculum Vitae -->
+    <div class="modal fade bd-example-modal-lg" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Curriculum Vitae</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="Cv">
+              <div class="texto">
+                <figure id="curriculumImg">
+                  <img src="Img/curriculumImg.jpeg" alt="Foto del C.V">
+                </figure>
+                <div class="curriculum">
+                  <h4 class="h4">Datos Personales:</h4>
+                  <p class="p">
+                    Nombre: Matás Andés
+                    <br>
+                    Apellido: Tato González
+                    <br>
+                    Documento de Identidad: 5.064.861-4
+                    <br>
+                    Dirección: Placido Ellauri esq. Buxareo 3267
+                    <br>
+                    Localidad: Montevideo
+                    <br>
+                    Fecha de nacimiento: 11/1/2000
+                    <br>
+                    Teléfono fijo: 25252163
+                    <br>
+                    Celular: 098156283
+                    <br>
+                    E-mail: matiastato5064@gmail.com
+                  </p>
+                  <br><br>
+                  <h4 class="h4">Estudios Cursados:</h4>
+                  <p class="p">
+                    Secundaria, Bachillerato:
+                    <br>
+                    -Liceo N° 4 Zorrilla.
+                    <br>
+        			      -Año de Comienzo: 2015.
+                    <br>
+        			      -Aún estoy cursando en 6to.
+                  </p>
+                  <br><br>
+                  <h4 class="h4">Referencias Personales:</h4>
+                  <p class="p">
+                    Nombre: Mariana Lempesi.
+                    <br>
+                    Profesión: Auxiliar Contable.
+                    <br>
+                    Telefono de contacto: 091615780
+                  </p>
+                  <br><br>
+                  <p class="p" style="text-align : right;">
+                    Matías Tato 098156283
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final del curriculum vitae-->
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/body_inicio.js"></script>
+    <script src="js/Head.js"></script>
+    <script src="js/Foot.js"></script>
+    <script src="js/Competencias.js"></script>
+    <script src="js/Desarrollo.js"></script>
+    <script src="js/Trabajo.js"></script>
   </body>
 </html>

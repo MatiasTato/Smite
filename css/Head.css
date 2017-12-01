@@ -1,6 +1,6 @@
 body{
-  height: 100%;
   width: 100%;
+  height: auto;
 }
 
 #head{
@@ -8,19 +8,15 @@ body{
   width: 100%;
   z-index: 10;
 
-
   position: fixed;
-}
-
-#head .navbar{
-  opacity: 0.3;
-}
-
-#head #navbar-example2{
-  background-color: #98c7fb;
 }
 
 #head .navbar a{
   font-family: serif;
   font-size: 20px;
+  color: white;
+}
+
+#head .navbar {
+  background: none !important;
 }

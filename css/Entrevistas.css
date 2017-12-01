@@ -1,0 +1,74 @@
+.entrevistas{
+  width: 35%;
+  margin-top: 100px;
+  margin-left: 7.4%;
+  margin-right: 7.4%;
+  display: inline-block;
+}
+
+.cita{
+
+  font-size: 23px;
+  font-family: 'Vollkorn', serif;
+  color: green;
+}
+
+.card-img-top{
+  height: 275px;
+}
+
+#entrevistaRita {
+}
+
+#entrevistaRitaImg {
+  width: 85%;
+  margin-left: 7.5%;
+  height: 280px;
+}
+
+#entrevistaRitaImg img {
+  width: 100%;
+  height: 100%;
+}
+
+#entrevistaSebastian{
+}
+
+#entrevistaSebastianImg {
+  width: 85%;
+  height: 280px;
+  margin-left: 7.5%;
+}
+
+#entrevistaSebastianImg img{
+  width: 100%;
+  height: 100%;
+}
+
+#entrevistaSantiago {
+}
+
+#entrevistaSantiagoImg {
+  width: 85%;
+  margin-left: 7.5%;
+  height: 280px;
+}
+
+#entrevistaSantiagoImg img {
+  width: 100%;
+  height: 100%;
+}
+
+#entrevistaFabian {
+}
+
+#entrevistaFabianImg {
+  width: 85%;
+  margin-left: 7.5%;
+  height: 280px;
+}
+
+#entrevistaFabianImg img{
+  width: 100%;
+  height: 100%;
+}
