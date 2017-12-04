@@ -80,12 +80,22 @@
   color: white;
 }
 
-#body #leerMenos{
+#body #leerEng{
   height: 100%;
-  width: 83%;
+  width: 15%;
   font-size: 18px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-color: white;
+  background: none;
+  display: inline-block;
+  color: white;
+}
+
+#body #leerMenos{
+  height: 100%;
+  width: 66%;
+  font-size: 18px;
   border-color: white;
   background: none;
   display: inline-block;

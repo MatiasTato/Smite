@@ -22,11 +22,25 @@ $(document).ready(function(){
     $("#menos").css({"display" : "none"});
   }
 
+  function LeerEng() {
+    leer += "This page is going to show you a little bit about the life and thoughts of Matías Andrés Tato González -that's right, you're gonna read some things about me-. I'm 17 years old, I practice Calistenia, which is a sport similar to Olympic Gymnastics. I consider that I have the ability of larning things very faster, especially if they are related to math and logic. My main objective for next year is to sing up in Engineering College and to continuing on the development of all the proficiencies, such as punctuality, teamwork, etc., that I've learned over this year. When I have free time, I enjoy playing videogames and sometimes going out with friends toplay rol games on Friday's nights.";
+
+    $(".descripcion").html(leer);
+    leer = "";
+
+    $("#mas").css({"display" : "none"});
+    $("#menos").css({"display" : "block"});
+  }
+
   $("#mas").click(function() {
     LeerMas();
   });
 
   $("#leerMenos").click(function() {
     LeerMenos();
+  });
+
+  $("#leerEng").click(function() {
+    LeerEng();
   });
 });
