@@ -1,0 +1,14 @@
+#carouselExampleIndicators .carousel-item .imgCarousel{
+  width: 100%;
+  height: 550px;
+}
+
+#carouselExampleIndicators .carousel-item{
+  width: 70%;
+  margin-left: 15%;
+}
+
+#carouselExampleIndicators .flechas:hover{
+  background-color: gray;
+  opacity: 0.2;
+}

@@ -47,21 +47,6 @@
   font-size: 19px;
 }
 
-#body #carouselExampleIndicators .carousel-item .imgCarousel{
-  width: 100%;
-  height: 550px;
-}
-
-#body #carouselExampleIndicators .carousel-item{
-  width: 70%;
-  margin-left: 15%;
-}
-
-#body #carouselExampleIndicators .flechas:hover{
-  background-color: gray;
-  opacity: 0.2;
-}
-
 #body .fondo{
   margin: 0;
   width: 100%;
@@ -72,14 +57,7 @@
   text-decoration: underline;
 }
 
-.i{
-  font-size: 40px;
-}
-
-.pi{
-  font-size: 40px;
-}
-
-.izquierda{
-  text-align: left;
+hr{
+  border: solid 0.5px;
+  border-color: lightgray;
 }

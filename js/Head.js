@@ -1,4 +1,9 @@
 $(document).ready(function(){
+  function mostrarJaP(){
+    $("#JaP").css({"display" : "block"});
+    $("#JaP").animate({opacity : "1"});
+  }
+
   function mostrarCompetencias() {
     $("#competencias").css({"display" : "block"});
     $("#competencias").animate({opacity : "1"});
@@ -20,6 +25,8 @@ $(document).ready(function(){
   }
 
   function mostrarInicio() {
+    $("#JaP").animate({opacity : "0"});
+    $("#JaP").css({"display" : "none"});
     $("#competencias").animate({opacity : "0"});
     $("#competencias").css({"display" : "none"});
     $("#Desarrollo").animate({opacity : "0"});
@@ -52,5 +59,10 @@ $(document).ready(function(){
 
   $("#mostrarInicio").click(function(){
     mostrarInicio();
+  });
+
+  $("#mostrarJaP").click(function(){
+    mostrarInicio();
+    mostrarJaP();
   });
 });

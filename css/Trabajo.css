@@ -1,33 +1,24 @@
 #trabajoBusqueda{
-  width: 45%;
-  display: inline-block;
+  margin-top: 50px;
 }
-
 #trabajoBusquedaImg{
-  float: right;
-  display: inline-block;
-  width: 50%;
+  width: 100%;
+  margin-top: 50px;
 }
 
 #trabajoBusquedaImg img{
-  width: 100%;
-}
-
-#trabajoCarta{
-  width: 50%;
-  display: inline-block;
-  margin-left: 50px;
+  width: 90%;
+  margin-left: 5%;
 }
 
 #trabajoCartaImg{
-  width: 45%;
-  display: inline-block;
-  float: left;
+  width: 100%;
+  margin-top: 30px;
 }
 
 #trabajoCartaImg img{
-  width: 100%;
-  height: auto;
+  width: 90%;
+  margin-left: 5%;
 }
 
 #Anuncios{

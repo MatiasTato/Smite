@@ -1,9 +1,10 @@
 .entrevistas{
-  width: 35%;
   margin-top: 100px;
-  margin-left: 7.4%;
-  margin-right: 7.4%;
-  display: inline-block;
+}
+
+.card{
+  width: 60%;
+  margin-left: 20%;
 }
 
 .cita{
@@ -17,9 +18,6 @@
   height: 275px;
 }
 
-#entrevistaRita {
-}
-
 #entrevistaRitaImg {
   width: 85%;
   margin-left: 7.5%;
@@ -29,9 +27,6 @@
 #entrevistaRitaImg img {
   width: 100%;
   height: 100%;
-}
-
-#entrevistaSebastian{
 }
 
 #entrevistaSebastianImg {
@@ -45,9 +40,6 @@
   height: 100%;
 }
 
-#entrevistaSantiago {
-}
-
 #entrevistaSantiagoImg {
   width: 85%;
   margin-left: 7.5%;
@@ -57,9 +49,6 @@
 #entrevistaSantiagoImg img {
   width: 100%;
   height: 100%;
-}
-
-#entrevistaFabian {
 }
 
 #entrevistaFabianImg {
